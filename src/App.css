@@ -81,8 +81,8 @@
 .item-btn {
   align-self: center;
   justify-self: flex-end;
-  position: relative;
-  left: 300px;
+  position: absolute;
+  right: 600px;
 }
 .btn-delete {
   margin-right: 20px;
