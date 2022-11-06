@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.app {
+  display: flex;
+  align-items: center;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+  width: 100%;
   background-color: #282c34;
   min-height: 100vh;
+}
+
+.list-component {
   display: flex;
   flex-direction: column;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: 32%;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 50px;
+  width: 500px;
+  height: auto;
+  color: black;
+}
+.btn {
+  background-color: #2196f3;
+  width: 90px;
+  height: 40px;
   color: white;
+  border: none;
+  border-radius: 10px;
+  margin-left: 40%;
 }
-
-.App-link {
-  color: #61dafb;
+.input {
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  height: 40px;
+  border: 1px solid #0b6cbc;
+  font-size: 18px;
+  margin-left: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textarea {
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  height: 70px;
+  border: 1px solid #0b6cbc;
+  font-size: 15px;
+  margin-left: 20px;
+}
+.input ::placeholder {
+  font-size: 18px;
+  color: black;
+}
+.input:focus {
+  border: 1px solid #0b6cbc;
+}
+.form {
+  margin-bottom: 20px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.item {
+  display: flex;
+  border: 1px solid black;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.item-btn {
+  align-self: center;
+  justify-self: flex-end;
+  position: relative;
+  left: 300px;
+}
+.btn-delete {
+  margin-right: 20px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.btn-edit {
+  background-color: transparent;
+  border: none;
+  color: blue;
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
